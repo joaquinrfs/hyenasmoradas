@@ -55,6 +55,7 @@ h1, h2 {
 	margin-top: 0;
 	margin-bottom: 0.25em;
 	font-family: "DancingScript", sans-serif;
+	line-height: 1.2;
 }
 
 h1 {
@@ -134,4 +135,32 @@ div {
 
 #warning p {
 	margin-bottom: 0;
+}
+
+@media screen and (max-width: 38.75rem) {
+	#banner img {
+		float: none;
+		width: 100%;
+	}
+
+	#warning p {
+		font-size: 7vw;
+	}
+}
+
+@media screen and (max-width: 30rem) {
+	#counter > span {
+		font-size: 18vw;
+		font-weight: 300;
+	}
+}
+
+@media screen and (max-width: 22.5rem) {
+	#counter p {
+		font-size: 6vw;
+	}
+
+	#warning p {
+		font-size: 1.5rem;
+	}
 }
