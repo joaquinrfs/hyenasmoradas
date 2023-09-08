@@ -1,0 +1,137 @@
+@font-face {
+	font-family: "DancingScript";
+	src: url("/fonts/DancingScript-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: italic;
+	src: url("/fonts/Roboto-Italic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "FiraCode";
+	font-weight: 400;
+	src: url("/fonts/FiraCode-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "FiraCode";
+	font-weight: 300;
+	src: url("/fonts/FiraCode-Light.woff2") format("woff2");
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	color: white;
+	background: black;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 1.125em;
+	line-height: 1.6;
+}
+
+main {
+	margin-left: auto;
+	margin-right: auto;
+	background: #0e0e0e;
+}
+
+h1, h2 {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	font-family: "DancingScript", sans-serif;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+
+em, strong {
+	color: deeppink;
+}
+
+strong {
+	font-weight: 400;
+}
+
+div {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.container {
+	width: 100%;
+	max-width: 45rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#banner img {
+	float: left;
+	width: 20rem;
+	margin-right: 0.5em;
+}
+
+#counter {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	background: black;
+	font-family: "FiraCode", Consolas, monospace;
+	text-align: center;
+}
+
+#counter p {
+	font-size: 1.25em;
+	margin-bottom: 0;
+}
+
+#counter > span {
+	font-size: 5em;
+	font-weight: 300;
+}
+
+#warning {
+	height: 100vh;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	font-family: "FiraCode", Consolas, monospace;
+	font-weight: 300;
+	font-size: 2.5em;
+	color: deeppink;
+}
+
+#warning > .container {
+	max-width: 70rem;
+}
+
+#warning p {
+	margin-bottom: 0;
+}

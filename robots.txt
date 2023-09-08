@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+YOU ARE NOT GOING TO GET ME
