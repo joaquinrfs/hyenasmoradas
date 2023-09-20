@@ -1,9 +1,19 @@
-const truthDate = new Date('2023-09-10T23:30:00.0Z');
 const counter = document.querySelector('#counter > span');
+let target = new Date('2023-09-10T23:30:00.0Z');
+let now = new Date();
 
 setInterval(() => {
+	if (target < now) {
+		while (target < now) {
+			target.setDate(target.getDate() + 7);
+		}
+	}
+	calcTime();
+}, 1000);
+
+function calcTime() {
 	const now = new Date();
-	const countDown = truthDate - now;
+	const countDown = target - now;
 
 	const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
 	let hours = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -19,4 +29,4 @@ setInterval(() => {
 		hours = `0${hours}`;
 
 	counter.innerHTML = `${hours}:${minutes}:${seconds}`;
-}, 1000);
+}
